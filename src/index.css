@@ -1,0 +1,19 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Covered By Your Grace', cursive;
+}
+
+body,
+html {
+  text-align: center;
+}
+
+.bg{
+  height: 1296px;
+  background-image: url("./src/img/bg.jpeg");
+  background-repeat: repeat;
+  background-size: 30%;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
