@@ -1,9 +1,30 @@
 import './Title.css'
+import { useState } from 'react'
 
-import React from 'react'
+export const Title = (props) => {
+  const [input, setInput] = useState('')
 
-export const Title = () => {
+  const hdlSubmit = e => {
+    e.preventDefault()
+
+    props.onSubmit({
+      id: Math.floor(Math.random() * 10000),
+      text: input
+    })
+    setInput('')
+  }
+  const hdlChange = e => {
+    setInput(e.target.value)
+  }
+
+
   return (
-    <div><h1>ToDo List</h1></div>
+    <div>
+      <form className="todo-form" onSubmit={hdlSubmit}>
+        <input className="toDoInput" name="text" type="text" placeholder="Nova tarefa" value={input} onChange={hdlChange} />
+        <button className="addToDoBtn"><strong>+</strong></button>
+      </form>
+    </div>
+
   )
 }
