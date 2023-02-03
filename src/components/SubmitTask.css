@@ -1,0 +1,20 @@
+h1 {
+  padding-top: 20px;
+  font-size: 70px;
+  color: #000 ;
+}
+
+.addToDoBtn {
+  margin-left: auto;
+  margin-top: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  width: 32px;
+  font-size: 16pt;
+}
+
+.toDoInput{
+width: 350px;
+text-align: center;
+font-size: 16pt;
+}

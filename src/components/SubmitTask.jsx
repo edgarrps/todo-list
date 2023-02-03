@@ -1,7 +1,7 @@
-import './Title.css'
+import './SubmitTask.css'
 import { useState } from 'react'
 
-export const Title = (props) => {
+export const SubmitTask = (props) => {
   const [input, setInput] = useState('')
 
   const hdlSubmit = e => {

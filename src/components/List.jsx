@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { Title } from './Title'
+import { SubmitTask } from './SubmitTask'
+import './List.css'
 export const List = () => {
     const [tasks, setTasks] = useState([])
 
@@ -11,15 +12,14 @@ if(!task.text) {
 const newTasks = [task, ...tasks]
 
 setTasks(newTasks)
-console.log(...tasks)
     }
+    
     return (
-        <div>
-            <h1>ToDo List</h1>
+        <div className='card'>
+            <h1>TO DO LIST</h1>
+            <div className='comment'><h2>Quais as suas tarefas para hoje?</h2></div>
             <br></br>
-            <h2>Quais Suas tarefas para hoje?</h2>
-            <br></br>
-            <Title onSubmit={addTask} />
+            <SubmitTask onSubmit={addTask} />
         </div>
     )
 }
