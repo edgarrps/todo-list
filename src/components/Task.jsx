@@ -11,8 +11,13 @@ function Task() {
         <div className={task.isComplete ? 'task-row complete' : 'task-row'}
             key={index}>
             <div key={task.id} onClick={() => completeTask(task.id)}></div>
-        {task.text}
+            {task.text}
+
+            <div className='icons'>
+            
+            </div>
         </div>
+
     ))
 }
 
