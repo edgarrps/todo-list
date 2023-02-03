@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-export const SubmitTask = (props) => {
+export const EditTask = (props) => {
   const [input, setInput] = useState('')
 
   const hdlSubmit = e => {
@@ -20,7 +20,7 @@ export const SubmitTask = (props) => {
   return (
     <div>
       <form className="todo-form" onSubmit={hdlSubmit}>
-        <input className="toDoInput" name="text" type="text" placeholder="Nova tarefa" value={input} onChange={hdlChange} />
+        <input className="toDoInput" name="text" type="text" placeholder="Editar tarefa" value={input} onChange={hdlChange} />
         <button className="addToDoBtn"><strong>+</strong></button>
       </form>
     </div>

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Covered By Your Grace', cursive;
+  }
+  
+  body {
+    background-color:rgb(6, 44, 78);
+    text-align: center;
+    background-repeat: no-repeat;
+  }
+
+.comment {
+    background-color: rgb(228, 199, 199);
+    width: 360px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3rem;
+    font-size: 14pt;
+}
+
+
+h1 {
+    padding-top: 20px;
+    font-size: 70px;
+    color: #000 ;
+    font-family: 'Vollkorn', serif;
+    color: #fff;
+}
+
+.card{
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    position: flex;
+    background: linear-gradient(#e66465, #9198e5);;
+    color: rgb(5, 90, 164);
+    border-radius: 15px;
+    width: 500px;
+    height: 600px;
+}
+ 
+  .addToDoBtn {
+    margin-left: auto;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    width: 32px;
+    font-size: 16pt;
+  }
+  
+  .toDoInput{
+  width: 350px;
+  text-align: center;
+  font-size: 16pt;
+  }
