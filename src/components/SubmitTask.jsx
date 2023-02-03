@@ -19,9 +19,9 @@ export const SubmitTask = (props) => {
 
   return (
     <div>
-      <form className="todo-form" onSubmit={hdlSubmit}>
-        <input className="toDoInput" name="text" type="text" placeholder="Nova tarefa" value={input} onChange={hdlChange} />
-        <button className="addToDoBtn"><strong>+</strong></button>
+      <form className="taskForm" onSubmit={hdlSubmit}>
+        <input className="taskInput" name="text" type="text" placeholder="Nova tarefa" value={input} onChange={hdlChange} />
+        <button className="addTaskBtn"><strong>+</strong></button>
       </form>
     </div>
 

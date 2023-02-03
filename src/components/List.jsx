@@ -44,9 +44,9 @@ export const List = () => {
         <div className='card'>
             <h1>TO DO LIST</h1>
             <div className='comment'><h2>Quais as suas tarefas para hoje?</h2></div>
-            <br></br>
             <SubmitTask onSubmit={addTask} />
             <Task tasks={tasks} completeTask={completeTask} removeTask={removeTask} updateTask={updateTask}/>
+            <br></br>
         </div>
     )
 }
