@@ -1,9 +1,10 @@
 import { useState } from 'react'
-import { RiCloseCircleLine } from 'react-icons/ri'
-import { TiEdit } from 'react-icons/ti'
+import { RiCloseFill } from 'react-icons/ri'
+import { HiOutlinePencilAlt } from 'react-icons/hi'
+import { BsCheck2 } from 'react-icons/bs'
 import { EditTask } from './EditTask'
 
-function Task({tasks, completeTask, removeTask, updateTask}) {
+function Task({tasks, completeTask, removeTask, updateTask, checkTask}) {
     const [edit, setEdit] = useState({
         id: null,
         value: ''
@@ -28,10 +29,9 @@ function Task({tasks, completeTask, removeTask, updateTask}) {
             {task.text}
 
             <div className='icons'>
-            <RiCloseCircleLine onClick={() => removeTask(task.id)}
-            className='delete-icon'/>
-            <TiEdit onClick={() => setEdit({id: task.id, value: task.text})}
-            className='edit-icon'/>
+            <HiOutlinePencilAlt onClick={() => setEdit({id: task.id, value: task.text})} className='edit-icon'/>
+            <BsCheck2 onClick={() => checkTask(task.id)} className='check-icon'/>
+            <RiCloseFill onClick={() => removeTask(task.id)} className='delete-icon'/>
             </div>
         </div>
 
